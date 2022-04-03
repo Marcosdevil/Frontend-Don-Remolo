@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { VistaProductoPizzasComponent } from './vista-producto-pizzas/vista-producto-pizzas.component';
 import { VistaProductoEmpanadasComponent } from './vista-producto-empanadas/vista-producto-empanadas.component';
 import { VistaProductoPostresComponent } from './vista-producto-postres/vista-producto-postres.component';
+import { routing, appRoutingProviders } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -30,10 +31,11 @@ import { VistaProductoPostresComponent } from './vista-producto-postres/vista-pr
   ],
   imports: [
     BrowserModule,
+    routing,
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [appRoutingProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
