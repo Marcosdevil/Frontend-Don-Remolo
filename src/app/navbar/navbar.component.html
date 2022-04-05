@@ -2,11 +2,11 @@
     <img class="logo" src="../assets/imagenes/logo.jpg" alt="Logo de Pizzería Don Rémolo">
     <nav>
         <ul class="nav_links">
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Pizzas</a></li>
-            <li><a href="#">Empanadas</a></li>
-            <li><a href="#">Bebidas</a></li>
-            <li><a href="#">Postres</a></li>
+            <li><a [routerLink]="['/']">Menu</a> <!--agrego routing--></li>
+            <li><a [routerLink]="['/pizzas']">Pizzas</a> <!--agrego routing--></li>
+            <li><a [routerLink]="['/empanadas']">Empanadas</a> <!--agrego routing--></li>
+            <li><a [routerLink]="['/bebidas']">Bebidas</a> <!--agrego routing--></li>
+            <li><a [routerLink]="['/postres']">Postres</a> <!--agrego routing--></li>
         </ul>
     </nav>
     <a href="#" class="cta"><button>Contactenos</button></a>
